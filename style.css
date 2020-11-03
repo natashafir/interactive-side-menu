@@ -1,0 +1,30 @@
+.wrapper {
+    display: f;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.navigation {
+    position: absolute;
+    left: 30px;
+    top: 100px;
+}
+
+#nav__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    max-width: 500px;
+}
