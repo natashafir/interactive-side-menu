@@ -38,7 +38,28 @@ const info = [
         id: 7,
         name: 'Cenote Suytun',
         img_url: './img/suytun.jpg'
+    },
+    {
+        id: 8,
+        name: 'Tolantongo',
+        img_url: './img/tolantongo.jpg'
+    },
+    {
+        id: 9,
+        name: 'Oaxaca',
+        img_url: './img/oaxaca.jpg'
+    },
+    {
+        id: 10,
+        name: 'La Paz',
+        img_url: './img/la-paz.jpg'
+    },
+    {
+        id: 11,
+        name: 'Playa Mujeres',
+        img_url: './img/mujeres.jpg'
     }
+
 ];
 
 let places = document.getElementById('main');
