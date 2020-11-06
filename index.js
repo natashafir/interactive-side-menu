@@ -1,7 +1,7 @@
 const info = [
     {
         id: 0,
-        name: 'Mexico City',
+        name: 'Ciudad de México',
         img_url: './img/cdmx.jpeg'
     },
     {
@@ -81,3 +81,25 @@ info.forEach(function (element, index) {
     });
 });
 
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        document.getElementById('navigation').style.display = 'none';
+        document.body.style.backgroundColor = "yellow";
+    } else {
+        document.getElementById("navigation").style.display = "block";
+        document.body.style.backgroundColor = "pink";
+    }
+}
+
+var x = window.matchMedia("(max-width: 700px)");
+myFunction(x);
+x.addListener(myFunction);// Call listener function at run time
+
+
+function buttonFunction() {
+    if (document.getElementById("navigation").style.display === "none") {
+        document.getElementById("navigation").style.display = "block";
+    } else {
+        document.getElementById("navigation").style.display = "none";
+    }
+}
