@@ -65,11 +65,15 @@ const info = [
 let places = document.getElementById('main');
 let navItems = document.getElementById('nav__wrapper');
 let img = document.createElement('img');
+let nav = document.getElementById("navigation");
+let burger = document.getElementById("hamburger");
+
 img.src = info[0].img_url;
 places.appendChild(img);
 
 info.forEach(function (element, index) {
     const but = document.createElement('button');
+    but.classList.add("btn");
     but.id = info[index].id;
     but.innerHTML = info[index].name;
     navItems.appendChild(but);
@@ -83,23 +87,22 @@ info.forEach(function (element, index) {
 
 function myFunction(x) {
     if (x.matches) { // If media query matches
-        document.getElementById('navigation').style.display = 'none';
-        document.body.style.backgroundColor = "yellow";
+        nav.style.display = 'none';
     } else {
-        document.getElementById("navigation").style.display = "block";
-        document.body.style.backgroundColor = "pink";
+        nav.style.display = "block";
     }
 }
 
-var x = window.matchMedia("(max-width: 700px)");
+let x = window.matchMedia("(max-width: 700px)");
 myFunction(x);
 x.addListener(myFunction);// Call listener function at run time
 
-
 function buttonFunction() {
-    if (document.getElementById("navigation").style.display === "none") {
-        document.getElementById("navigation").style.display = "block";
+    if (nav.style.display === "none") {
+        nav.style.display = "block";
+        burger.style.background = "url(./img/x.png)";
     } else {
-        document.getElementById("navigation").style.display = "none";
+        nav.style.display = "none";
+        burger.style.background = "url(./img/menu.png)";
     }
 }
