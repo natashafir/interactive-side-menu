@@ -100,7 +100,7 @@ x.addListener(myFunction);// Call listener function at run time
 function buttonFunction() {
     if (nav.style.display === "none") {
         nav.style.display = "block";
-        burger.style.background = "url(./img/x.png)";
+        burger.style.background = "url(./img/x.png) no-repeat center";
     } else {
         nav.style.display = "none";
         burger.style.background = "url(./img/menu.png)";
