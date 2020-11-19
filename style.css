@@ -30,7 +30,7 @@ img {
 
 .content {
     display: flex;
-    margin-top: 16px;
+    margin-top: 5%;
     justify-content: space-around;
     position: relative;
     padding: 0 20px;
@@ -39,6 +39,7 @@ img {
 }
 
 .navigation {
+    display: block;
     width: 30%;
     flex: 1;
 }
@@ -109,8 +110,17 @@ input[type="checkbox"]:checked ~ .main {
     }
 
     .navigation {
+        display: none;
         width: 60%;
         left: 0;
         position: absolute;
+    }
+
+    .hamburger--open {
+        background: url("./img/x.png") no-repeat center;
+    }
+
+    .navigation--open {
+        display: block;
     }
 }
