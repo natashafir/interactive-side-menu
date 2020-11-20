@@ -77,10 +77,8 @@ const changeImg = (event) => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-
     img.src = mexPlaces[0].img_url;
     places.appendChild(img);
-
     mexPlaces.forEach(function (element, index) {
         const placeBtn = document.createElement('button');
         placeBtn.classList.add("btn");
@@ -88,6 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
         placeBtn.innerHTML = mexPlaces[index].name;
         navItems.appendChild(placeBtn);
     });
+
     burger.addEventListener('click', showSideMenu);
     nav.addEventListener('click', changeImg);
 });
